@@ -40,6 +40,12 @@ public class TestSerieADAO {
 		
 		List<Match> l= dao.getPartiteVinteInCasaDA(new Team("Juventus"), map, mapm);
 		System.out.println(l.toString()+"\n"+l.size());
+		
+		List<Match> listaaaaa=dao.getAllMatchDiUnTeam(new Team("Inter"), map);
+		System.out.println("g"+listaaaaa);
+		
+		List<Match> lista1=dao.getAllMatchDiUnTeam(new Team("Inter"), map, mapm);
+		System.out.println("\n---h"+lista1);
 	}
 
 }
